@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/Fav Icon (4).png">
+
+  <title>Credit Presto</title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.main{
+      max-width:200px;
+      width: 200px;
+    }
+  .has-search .form-control {
+      padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      /* width: 2.375rem; */
+      padding-left: 15px;
+      height: 2.375rem;
+      line-height: 2.375rem;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    
+  }
+  .search:focus{
+    display: block;
+    border-bottom: 1px solid #aaa;
+    border-radius: 2px;
+  }
+  .tabbable-panel {
+  border:1px solid #eee;
+  padding: 10px;
+}
+
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin: 15px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+/* .tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid rgb(80,144,247);
+} */
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #26B86E;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  /* padding: 15px 0; */
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}
+</style>
+</head>
+
+
+<body class="g-sidenav-show  " style="background-color: #FFFFFF;">
+
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3  "
+  id="sidenav-main" style="background-color: #FFFFFF;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+      aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0" href=" # " target="_blank">
+      <img src="./assets/img/Group 2132.png" alt="main_logo"  style="width:100%"> 
+<!-- <h6>CATAPULT</h6> -->
+    </a>
+  </div>
+  <hr class="horizontal dark mt-0 mb-2">
+  <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+    <ul class="navbar-nav">
+      <li class="nav-item mb-2 mt-0">
+        <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark " aria-controls="ProfileNav"
+          role="button" aria-expanded="false">
+          <img src="./assets/img/kal-visuals-square.jpg" class="avatar">
+          <span class="nav-link-text ms-2 ps-1 font-weight-bolder" style="font-weight: 400;">Alex Brooklyn</span>
+        </a>
+        <div class="collapse" id="ProfileNav" style="">
+          <ul class="nav ">
+
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="Login.html">
+                <span class="sidenav-mini-icon"> L </span>
+                <span class="sidenav-normal  ms-3  ps-1" style="font-weight: 400;"> Logout</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <hr class="horizontal dark mt-0">
+
+      <li class="nav-item">
+        <a href="index.html" class="nav-link text-white"  style="color:#3C4856 !important;">
+          <i class="material-icons-round   float-start"  style="color:#3C4856 !important;">dashboard</i>
+          <span class="nav-link-text  px-3 "  style="color:#3C4856 !important;font-weight: 400;">Dashboard</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+     <a href="Clients.html" class="nav-link text-dark " style="color:#3C4856 !important;"  >
+      <span class="material-symbols-outlined" style="color:#3C4856 !important;" >person </span>
+       <span class="nav-link-text text-dark  ps-4 px-2 " style="color:#3C4856 !important;font-weight: 400">Clients</span>
+     </a>
+   </li>
+     <li class="nav-item">
+     <a href="Schedule.html" class="nav-link text-dark " style="color:#3C4856 !important;">
+      <span class="material-symbols-outlined" style="color:#3C4856 !important;"> calendar_month</span>
+    <span class="nav-link-text text-dark px-4 "  style="color:#3C4856 !important;font-weight: 400">Schedule</span>
+     </a>
+     </li>
+     <li class="nav-item">
+     <a href="Invoices.html" class="nav-link text-dark   "  style="color:#3C4856 !important;">
+       <i class="fa fa-line-chart" aria-hidden="true" style="font-size:20px;color:#3C4856 !important;"></i>
+       <span class="nav-link-text text-dark px-3 " style="color:#3C4856 !important;font-weight: 400">Invoices</span>
+     </a>
+    </li>
+       <li class="nav-item">
+        <a href="Letters Library.html" class="nav-link text-dark " style="color:#3C4856 !important;">
+          <span class="material-symbols-outlined" style="color:#3C4856 !important;">drafts </span>
+          <span class="nav-link-text text-dark  px-4  " style="color:#3C4856 !important;font-weight: 400">Letters Library</span>
+        </a>
+       </li>
+       <li class="nav-item">
+        <a href="Affiliates.html" class="nav-link text-dark bg-light active " style="color:#00AB55 !important;">
+          <span class="material-symbols-outlined"  style="color:#00AB55 !important;">
+            group_add
+            </span>
+          <span class="nav-link-text text-dark  px-4  " style="color:#00AB55 !important;font-weight: 400">Affiliates</span>
+        </a>
+       </li>
+       <li class="nav-item">
+        <a href="Creditor-Furnisher.html" class="nav-link text-dark " style="color:#3C4856 !important;">
+          <span class="material-symbols-outlined"  style="color:#3C4856 !important;">
+            account_circle
+            </span>
+          <span class="nav-link-text text-dark  px-4  " style="color:#3C4856 !important;font-weight: 400">Creditor/Furnisher</span>
+        </a>
+       </li>
+       <li class="nav-item">
+        <a href="Supports.html" class="nav-link text-dark " style="color:#3C4856 !important;">
+          <span class="material-symbols-outlined"  style="color:#3C4856 !important;">
+            help
+            </span>
+          <span class="nav-link-text text-dark  px-4  " style="color:#3C4856 !important;font-weight: 400">Supports</span>
+        </a>
+       </li>
+       <li class="nav-item mb-2 mt-0">
+        <a data-bs-toggle="collapse" href="#projectsExample" class="nav-link text-dark " aria-controls="ProfileNav"
+          role="button" aria-expanded="false">
+          <span class="material-symbols-outlined"  style="color:#3C4856 !important;">
+            meeting_room
+            </span>
+          <span class="nav-link-text px-4  " style="font-weight: 400;">Company</span>
+        </a>
+        <div class="collapse" id="projectsExample" style="">
+          <ul class="nav ">
+            <li class="nav-item" >
+              <a class="nav-link text-dark " href="Settings.html">
+                <i class="fa fa-circle " aria-hidden="true" style="font-size: 10px;color:#3C4856 !important"></i>
+                <span class="sidenav-normal  px-4  ps-1" style="font-weight: 400;"> Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="Templates.html">
+                <i class="fa fa-circle" aria-hidden="true" style="font-size: 10px;color:#3C4856 !important"></i>
+                <span class="sidenav-normal  px-4   ps-1" style="font-weight: 400;"> Templates</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="Tutorials.html">
+                <i class="fa fa-circle" aria-hidden="true"  style="font-size: 10px;color:#3C4856 !important"></i>
+                <span class="sidenav-normal  px-4   ps-1" style="font-weight: 400;">Tutorials</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+  <main class="main-content border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        
+        <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+          <a href="javascript:;" class="nav-link text-body p-0">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="col-lg-11 px-4">
+            <div class="main">
+              <div class="form-group has-search" >
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control search" placeholder="Search" >
+          
+              </div>
+            </div>
+          </div>
+          
+          <ul class="navbar-nav  justify-content-end">
+            
+            <li class="nav-item  pe-3 pt-2">
+              <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons cursor-pointer">
+              notifications
+            </i>
+               
+              </a>
+              
+            </li>
+            <img src="./assets/img/kal-visuals-square.jpg" alt="bruce" class="rounded-circle shadow-lg" style="width: 50%;">
+           
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" >
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+   <div class="container-fluid py-2">
+    <div class="">
+        <h6 class="mb-0">Sample Affiliate</h6>
+    <div class="d-flex" ><a href="Affiliates.html"><p class="font-weight-bolder text-xs">Affiliates</p></a>
+        <ul class="d-flex"><li class="text-xs">List</li><li class="mx-4 text-xs">Sample Affiliate</li></ul></div>
+    
+    </div> 
+      <div class="col-lg-12  flex-wrap">
+          <div class=" card col-md-12" style="border-radius: 10%;box-shadow:none; ">
+             <div class="tabbable-line" >
+                  <ul class="nav nav-tabs  bg-light" >
+                    <li class="active">
+                      <a href="#tab_default_1" data-toggle="tab" class="font-weight-bold text-sm" onclick="changeText()" > Dashborad</a> </li>
+                    <li>  <a href="#tab_default_2" data-toggle="tab" class="font-weight-bold text-sm" id="btn1">Clients </a> </li>
+                    <li> <a href="#tab_default_3" data-toggle="tab" class="font-weight-bold text-sm">Earnings</a> </li>
+                  <li>  <a href="#tab_default_4" data-toggle="tab" class="font-weight-bold text-sm">Profile</a> </li>
+   
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab_default_1">
+                        <div class="card  px-4 pt-4 pb-10">
+                            <div class="row mt-2">
+                                <div class="col-sm-3">
+                                  <div class="card">
+                                    <div class="card-body p-3 position-relative">
+                                      <div class="row">
+                                        <div class="col-lg-7 text-start">
+                                          <h4 class="font-weight-bolder mb-0 " style="color: #005249;" >
+                                           300
+                                          </h4>
+                                      <span class="font-weight-normal text-xs text-secondary">Lorem ipsum</span>
+                                        </div>
+                                        <div class="col-lg-5 ml-4">
+                                          <img src="./assets/img/Letters.png" style="width: 100%;">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mt-sm-0 mt-4">
+                                  <div class="card">
+                                    <div class="card-body p-3 position-relative">
+                                      <div class="row">
+                                        <div class="col-lg-7  text-start">
+                                          <h4 class="font-weight-bolder mb-0 " style="color: #005249;" >
+                                            200K
+                                          </h4>
+                                           <span class="font-weight-normal text-xs mb-0 text-secondary">Lorem ipsum</span>
+                                        </div>
+                                        <div class="col-sm-5">
+                                         <img src="./assets/img/Clients.png" style="width: 100%;">
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mt-sm-0 mt-4">
+                                  <div class="card">
+                                    <div class="card-body p-3 position-relative">
+                                      <div class="row">
+                                        <div class="col-lg-7  text-start">
+                                          <h4 class="font-weight-bolder mb-0" style="color: #005249;">
+                                            25
+                                                  </h4>
+                                        <span class="font-weight-normal text-xs text-secondary">Lorem ipsum</span>
+                                        </div>
+                                        <div class="col-lg-5 ">
+                                          <img src="./assets/img/Video.png" style="width: 100%;">
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 mt-sm-0 mt-4">
+                                    <div class="card">
+                                      <div class="card-body p-3 position-relative">
+                                        <div class="row">
+                                          <div class="col-lg-7 text-start">
+                                            <h5 class="font-weight-bolder mb-0" style="color: #005249;">
+                                              $300
+                                              </h5>
+                                          <span class="font-weight-normal text-xs text-secondary">Lorem ipsum</span>
+                                          </div>
+                                          <div class="col-lg-5 ">
+                                            <img src="./assets/img/Dollar.png" style="width: 100%;">
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div> 
+                      </div>
+                    <div class="tab-pane" id="tab_default_2">
+                        <div class="card ">
+                            <div class="table-responsive mt-3">
+                              <table class="table align-items-center mb-0">
+                                <thead  style="background-color: #F4F6F8;">
+                                  <tr>
+                                    <th class=" text-xs font-weight-bolder ">Name</th>
+                                    <th class=" text-xs font-weight-bolder  ps-2">Status </th>
+                                    <th class="  text-xs text-center font-weight-bolder ">Price</th>
+                                    <th class="text-center  text-xs font-weight-bolder ">Action</th>   
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 pt-1 mx-2 text-sm text-dark">Sample Affiliate</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm text-dark mb-0">Active</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm text-center text-dark  mb-0">$300 </p>
+                                            </td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Edit </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">View </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 mx-2 pt-1 text-sm text-dark">Sample Affiliate</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm text-dark  mb-0">Active</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm text-center text-dark  mb-0">$300 </p>
+                                            </td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Edit </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;" >View </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 mx-2 pt-1 text-sm text-dark">Sample Affiliate</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm text-dark  mb-0">Active</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm text-center  mb-0 text-dark">$300 </p>
+                                            </td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Edit </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">View </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div> 
+                   </div>
+                    <div class="tab-pane" id="tab_default_3">
+                        <div class="card  p-3">
+                          <div class="row mt-2">
+                            <div class="col-sm-4">
+                              <div class="card">
+                                <div class="card-body p-3 position-relative">
+                                  <div class="row">
+                                    <div class="col-lg-7 text-start">
+                                      <p class="text-sm mb-1 text-capitalize font-weight-bold">Exerian</p>
+                                      <h4 class="font-weight-bolder mb-0">
+                                        300
+                                      </h4>
+                                      <span class="text-sm text-end d-flex  font-weight-bolder  mb-0  pt-3 px-0">
+                                        <span class="material-icons-round rounded-circle font-weight-bolder  p-1" style="background-color: #F8FDFA;color: #36B37E!important;"> trending_up </span>
+                                        <span class="font-weight-bolder text-sm  pt-2 px-1">+20</span><span class="font-weight-normal text-secondary pt-2">improve score</span></span>
+                                    </div>
+                                    <div class="col-lg-5 ml-4">
+                                      <img src="./assets/img/line01.jpeg" style="width: 100%;">
+                                    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mt-sm-0 mt-4">
+                              <div class="card">
+                                <div class="card-body p-3 position-relative">
+                                  <div class="row">
+                                    <div class="col-lg-7 text-start">
+                                      <p class="text-sm mb-1 text-capitalize font-weight-bold">TransUnion</p>
+                                      <h4 class="font-weight-bolder mb-0">
+                                        300
+                                      </h4>
+                                      <span class="text-sm d-flex  pt-3  font-weight-bolder mt-auto mb-0">
+                                        <span class="material-icons-round font-weight-bolder rounded-circle  p-1 text-info" style="background-color: #a1ccd4;color: #00B8D9;"> trending_up </span>
+                                        <span class="font-weight-bolder text-sm pt-2 px-1">+20</span><span class="font-weight-normal text-secondary pt-2">improve score</span></span>
+                                    </div>
+                                    <div class="col-sm-5">
+                                     <img src="./assets/img/line02.jpeg" style="width: 100%;">
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mt-sm-0 mt-4">
+                              <div class="card">
+                                <div class="card-body p-3 position-relative">
+                                  <div class="row">
+                                    <div class="col-lg-7 text-start">
+                                      <p class="text-sm mb-1 text-capitalize font-weight-bold">Equifax</p>
+                                      <h4 class="font-weight-bolder mb-0">
+                                        300
+                                      </h4>
+                                      <span class="font-weight-normal mt-auto mb-0  d-flex pt-3 text-sm">
+                                        
+                                        <span class="material-icons-round rounded-circle font-weight-bolder  p-1" style="background-color:#FFE4DE ;color: #FF5630;"> trending_down  </span>
+                                        <span class="font-weight-bolder text-sm  pt-2 px-1">+20</span><span class="font-weight-normal text-secondary pt-2 ">improve score</span></span>
+                                    </div>
+                                    <div class="col-lg-5 ">
+                                      <img src="./assets/img/line03.jpeg" style="width: 100%;">
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="table-responsive mt-3">
+                              <table class="table align-items-center mb-0">
+                                <thead  style="background-color: #F4F6F8;">
+                                  <tr>
+                                    <th class=" text-xs font-weight-bolder " style="text-transform: none;">Referred Client</th>
+                                    <th class=" text-xs font-weight-bolder  ps-2" style="text-transform: none;">Referred Date</th>
+                                    <th class=" text-xs font-weight-bolder text-center " style="text-transform: none;">Commission</th>
+                                    <th class=" text-xs font-weight-bolder " style="text-transform: none;">Status</th>
+                                    <th class="text-center  text-xs font-weight-bolder " style="text-transform: none;">Action</th>   
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 mx-2 pt-1 text-sm text-dark" >Johan Doe</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm mb-0  pt-2 pb-0  text-sm text-dark" >01/23/2023</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm mb-0 text-center pb-0 mx-2 text-sm text-dark">$300</p>
+                                            </td>
+                                     <td>       <span class="badge badge-success  mx-2 text-sm float-center font-weight-bolder badge-sm px-4" style="text-transform: none;">Paid</span></td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                  <!-- <li><a class="dropdown-item border-radius-md" href="javascript:;">Edit </a></li> -->
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleType">Pay Now</a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 mx-2 pt-1 text-sm text-dark" >Johan Doe</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm mb-0  pt-2 pb-0  text-sm text-dark" >01/23/2023</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm mb-0 text-center pb-0 mx-2 text-sm text-dark">$300</p>
+                                            </td>
+                                     <td>       <span class="badge badge-danger  mx-2 text-sm float-center font-weight-bolder badge-sm px-3" style="text-transform: none;">Un Paid</span></td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                    <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleType">Pay Now</a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                  
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 mx-2 pt-1 text-sm text-dark" >Johan Doe</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm mb-0  pt-2 pb-0  text-sm text-dark" >01/23/2023</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm mb-0 pb-0 text-center mx-2 text-sm text-dark">$300</p>
+                                            </td>
+                                     <td>       <span class="badge badge-danger  mx-2 text-sm float-center font-weight-bolder badge-sm px-3" style="text-transform: none;">Un Paid</span></td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                    <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleType">Pay Now</a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div >
+                                          <div class="d-flex px-3 mb-0  ">
+                                            <div class="form-check my-auto" >
+                                              <input class="form-check-input" type="checkbox" id="customCheck1" >
+                                            </div>
+                                        <p class="mb-0 pb-0 mx-2 pt-1 text-sm text-dark" >Johan Doe</p>
+                                          </div>
+                                        </div>
+                                         </td>
+                                    <td>
+                                    <p class="text-sm mb-0  pt-2 pb-0  text-sm text-dark" >01/23/2023</p>
+                                    </td>
+                                        <td>
+                                            <p class="text-sm mb-0 text-center pb-0 mx-2 text-sm text-dark">$300</p>
+                                            </td>
+                                     <td>       <span class="badge badge-success  mx-2 text-sm float-center font-weight-bolder badge-sm px-4" style="text-transform: none;">Paid</span></td>
+                                          <td class="align-middle text-center">
+                                        <p class="text-sm font-weight-normal mb-0">
+                                            <div class="dropstart">
+                                                <a href="javascript:;" class="text-secondary" id="dropdownMarketingCard" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="material-icons text-xl">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-lg-start px-2 py-3" aria-labelledby="dropdownMarketingCard">
+                                                    <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleType">Pay Now</a></li>
+                                                  <!-- <li><a class="dropdown-item border-radius-md" href="javascript:;">Edit </a></li>
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleType">View </a></li> -->
+                                                  <li><a class="dropdown-item border-radius-md" href="javascript:;">Delete</a></li>
+                                                </ul>
+                                              </div>
+                                        </p>
+                                      </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div> 
+                    </div>
+                   <div class="tab-pane" id="tab_default_4">
+                    <div class="card p-3">
+                  
+                     <div class="row ">
+                        <div class="col-lg-10 col-sm-12 d-flex justify-content-between">
+                        <div class="col-lg-4 d-flex justify-content-between">
+                          <p class="text-sm text-dark">First Name :</p>
+                          <p class="text-sm   text-end font-weight-bold" style="    margin-right: 60px;">Johan</p>
+                        </div>
+                        <div class="col-lg-6  d-flex justify-content-between">
+                            <p class="text-sm mx-5 text-dark">Last Name :</p>
+                            <p class="text-sm text-dark  text-start font-weight-bold" style="       margin-right: 123px;">Doe</p>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="row ">
+                        <div class="col-lg-10 col-sm-12 d-flex justify-content-between">
+                        <div class="col-lg-4 d-flex justify-content-between">
+                          <p class="text-sm text-dark">Status :</p>
+                          <p class="text-sm text-dark text-end mx-5 font-weight-bold">Affiliate</p>
+                        </div>
+                        <div class="col-lg-6  d-flex justify-content-between">
+                            <p class="text-sm text-dark mx-5 ">Company Name :</p>
+                            <p class="text-sm text-dark  text-sm mx-5 font-weight-bold text-end">Sample Affiliate</p>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="row justify-content-between">
+                        <div class="col-lg-10 col-sm-12 d-flex justify-content-between">
+                        <div class="col-lg-6 d-flex justify-content-between">
+                          <p class="text-sm text-dark">Company Website :</p>
+                          <p class="text-sm  font-weight-normal" style="margin-right: 58px;" >http://www.creditpresto.com</p>
+                        </div>
+                    
+                          </div>
+                     </div>
+                     <hr class="horizontal dark"/>
+                     <div class="row ">
+                      <div class="col-lg-10 col-sm-12 d-flex justify-content-between">
+                      <div class="col-lg-4 d-flex justify-content-between">
+                        <p class="text-sm text-dark">Email :</p>
+                        <p class="text-sm   text-end font-weight-bold" style="margin-right: -23px;;">sample@gmail.com</p>
+                      </div>
+                      <div class="col-lg-6  d-flex justify-content-between">
+                          <p class="text-sm mx-5 text-dark">Phone :</p>
+                          <p class="text-sm text-dark  text-start font-weight-bold" style="    margin-right: 53px;">(123) 456 7890</p>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="row ">
+                    <div class="col-lg-10 col-sm-12 d-flex justify-content-between">
+                    <div class="col-lg-4 d-flex justify-content-between">
+                      <p class="text-sm text-dark">Mobile :</p>
+                      <p class="text-sm   text-end font-weight-bold" style="    margin-right: 60px;">--</p>
+                    </div>
+                    <div class="col-lg-6  d-flex justify-content-between">
+                        <p class="text-sm mx-5 text-dark">Fax :</p>
+                        <p class="text-sm text-dark  text-start font-weight-bold" style="       margin-right: 123px;">--</p>
+                      </div>
+                    </div>
+                 </div>
+                     <!-- <div class="row ">
+                        <div class="col-lg-12 col-sm-12 d-flex justify-content-between">
+                        <div class="col-lg-4 d-flex justify-content-between">
+                          <p class="text-sm text-dark">Email :</p>
+                          <p class="text-sm font-weight-bold text-dark" style="       margin-right: -24px;">sample@gmail.com</p>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-between">
+                          <p class="text-sm text-dark">Phone :</p>
+                          <p class="text-sm font-weight-bold text-dark" style="       margin-right: 46px;">(123) 456 7890</p>
+                        </div>
+                      </div>
+                     </div> -->
+                     <!-- <div class="row justify-content-between">
+                        <div class="col-lg-10 col-sm-12 d-flex justify-content-between">
+                        <div class="col-lg-4 d-flex justify-content-between">
+                          <p class="text-sm text-dark">Mobile :</p>
+                          <p class="text-sm text-dark font-weight-bold">--</p>
+                        </div>
+                        <div class="col-lg-5  d-flex justify-content-between">
+                            <p class="text-sm text-dark">Fax :</p>
+                            <p class="text-sm text-dark font-weight-bold">--</p>
+                          </div>
+                          </div>
+                     </div> -->
+                   
+                    </div> 
+                </div>  </div>
+                </div>
+            </div>
+      </div>
+      <!-- modal -->
+      <!-- 1st -->
+      <div class="modal fade" id="exampleType" tabindex="-1" role="dialog" aria-labelledby="exampleTypeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-ls" role="document">
+          <div class="modal-content px-3">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleTypeLabel">Payment</h5>
+              <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="col-lg-12 "> 
+           <h6 class="text-sm mb-1">Date</h6>
+             <div class="row">
+                    <div class="col-12 ">
+                      <div class="input-group input-group-outline">
+                            <input type="date" class="form-control">
+                    </div>
+                  </div>
+             </div>
+            </div>
+            <div class="col-lg-12 "> 
+                <h6 class="text-sm  mb-1  mt-2">Amount Paid</h6>
+                  <div class="row">
+                         <div class="col-12 ">
+                            <div class="input-group input-group-outline mb-1">
+                                <span class="input-group-text mx-3">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                              </div>
+                       </div>
+                  </div>
+                 </div>
+            <div class="text-end mt-3">
+            <button type="button" class="btn bg-gradient text-light " style="background-color: #26B86E;text-transform: none;">Pay Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd -->
+    
+    </div>
+  </main>
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/datatables.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+ const tabdefault2=getElementById('btn1');
+ const reasonList=getElementById('addtemp')
+   function changeText(){
+reasonList.innerHTML==" Reasons List "
+   }
+</script>
+  <!-- Kanban scripts -->
+  <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+  <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>
